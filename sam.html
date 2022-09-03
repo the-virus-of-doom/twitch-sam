@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM: Text to Speech</title>
+</head>
+<body>
+    <h1>SAM test</h1>
+    <script src="node_modules/sam-js/dist/samjs.js"></script>
+    <script>
+
+    opts = {
+        debug: false,
+        pitch: 64,
+        speed: 72,
+        mouth: 128,
+        throat: 128
+    };
+    var speech;
+    function sayText(myText){
+        var sam = new SamJs(opts);
+        if (speech) speech.abort();
+        speech = sam.speak(myText);
+        speech.catch(() => {});
+  }
+    </script>
+    <button onclick="sayText('test complete')">test</button>
+</body>
+</html>
