@@ -1,0 +1,14 @@
+{
+  "name": "twitch-sam",
+  "version": "1.0.0",
+  "description": "twitch SAM integration",
+  "main": "index.js",
+  "repository": "https://github.com/the-virus-of-doom/twitch-sam.git",
+  "author": "Zach / Virus <thevirusofdoom1337@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "sam-js": "^0.2.0",
+    "tmi.js": "^1.8.5"
+  }
+}
