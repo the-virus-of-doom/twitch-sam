@@ -37,3 +37,9 @@ We have found out the following:
 * basic html page setup for use in OBS
   * greenscreen with text that pops up when channel points are redeemed
   * logging to page as a start?
+
+## Notes from 2022-09-20
+
+Tried to get twitch integration going. Instead spent most of the time reading documentation for webpack as a potential solution to transpile multiple .js files to prevent some of the weird `import` issues.
+
+This only somewhat worked.
